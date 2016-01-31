@@ -58,7 +58,7 @@ function createItemsMap(data, rate){
             price_euro = (parseFloat(data[row].price_ron) / rate).toFixed(2);
         }
         data_map.push({"name" :data[row].item_name, "description": data[row].description, "restaurantName": data[row].name, 
-        "priceRon": data[row].price_ron, "priceEuro": price_euro, "phone": data[row].phone});
+        "priceRon": data[row].price_ron, "priceEuro": price_euro, "phone": data[row].phone, "webPage": data[row].weblink});
     }
     return {"data":data_map};
 }
@@ -155,7 +155,7 @@ app.get('/get_offers', function(req, res, next)
     
     var cat_id = req.query.category_id,
         subcat_id = req.query.subcategory_id,
-        queryString = "SELECT menu.item_name, menu.price_ron, menu.description, r.name, r.phone \
+        queryString = "SELECT menu.item_name, menu.price_ron, menu.description, r.name, r.phone, r.weblink \
                         FROM menu_items menu JOIN restaurants r \
 	                        ON menu.restaurant_id = r.id \
                         WHERE menu.category_id = %d \
