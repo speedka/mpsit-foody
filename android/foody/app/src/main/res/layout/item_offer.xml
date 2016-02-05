@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/offer_item_height"
+    android:layout_margin="@dimen/normal_pad"
+    android:elevation="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offer_item_height"
+        android:background="@color/gray_divider"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_pad">
+
+            <TextView
+                android:id="@+id/tv_restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange_brown"
+                android:textSize="@dimen/text_subsubtitle"
+                tools:text="Trattoria Buongiorno de la mama" />
+
+            <TextView
+                android:id="@+id/tv_dish_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/medium_pad"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_subsubsubtitle"
+                tools:text="Salata bulgareasca cu ciuperci" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:paddingTop="@dimen/normal_pad"
+                android:textSize="@dimen/text_default"
+                tools:text="Rosii, castraveti, branza, ciuperci, rozmarin, sare, ulei de masline" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:padding="@dimen/normal_pad"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_subsubsubtitle"
+                tools:text="200 EURO" />
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:layout_width="@dimen/call_to_action_locate"
+                android:layout_height="@dimen/call_to_action_locate"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/normal_pad"
+                android:paddingRight="@dimen/normal_pad"
+                android:paddingBottom="@dimen/medium_pad"
+                android:src="@drawable/call_icon" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/call_to_action_size"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_locate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/normal_pad"
+                    android:paddingRight="@dimen/normal_pad"
+                    android:src="@drawable/locate_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_web_page"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/normal_pad"
+                    android:paddingRight="@dimen/normal_pad"
+                    android:src="@drawable/icon_web" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

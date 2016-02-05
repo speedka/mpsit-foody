@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Foody</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_ron">RON</string>
+    <string name="action_euro">EURO</string>
+    <string name="title">Hungry?</string>
+    <string name="title_activity_dish_list">DishListActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_restaurants">RestaurantsActivity</string>
+
+
+</resources>

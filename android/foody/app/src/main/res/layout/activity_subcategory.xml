@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.personal.foody.activities.SubcategoryListActivity"
+    android:background="@color/soft_white">
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <ListView
+        android:id="@+id/dish_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:dividerHeight="1dp"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/normal_pad"/>
+
+</LinearLayout>

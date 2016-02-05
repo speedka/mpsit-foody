@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="soft_white">#F6F7F7</color>
+    <color name="orange_brown">#521B04</color>
+    <color name="toolbar">#fbba9d</color>
+    <color name="background">#feeee7</color>
+    <color name="text_color_default">#263238</color>
+    <color name="gray_divider">#CFD8DC</color>
+</resources>

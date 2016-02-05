@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_white"
+    android:orientation="vertical"
+    tools:context="com.personal.foody.activities.OfferListActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <ListView
+        android:id="@+id/lv_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_pad"
+        android:layout_marginBottom="@dimen/medium_pad"
+        android:background="@android:color/white"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/normal_pad" />
+
+</LinearLayout>
